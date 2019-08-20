@@ -23,7 +23,7 @@ export class ProfileImage extends Component {
           margin: "auto",
         }}
       >
-        <Carousel autoplay style={{ background: "black" }}>
+        <Carousel autoplay>
           <div>
             <MyImage src={Photo4}/>
           </div>
