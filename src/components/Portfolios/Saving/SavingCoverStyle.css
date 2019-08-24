@@ -1,4 +1,4 @@
-.MoneyCover__MyBook {
+.Saving_MyBook {
   width: 325px;
   height: 330px;
   background: white;
@@ -10,7 +10,7 @@
   margin-top: 116px;
 }
 
-.MoneyCover__Cover {
+.Saving_Cover {
   width: 300px;
   height: 100%;
   position: absolute;
@@ -22,7 +22,7 @@
   transition: all 0.5s ease-in;
 }
 
-.MoneyCover__MyBook:hover .MoneyCover__Cover{
+.Saving_MyBook:hover .Saving_Cover{
   transform: rotateY(-180deg);
 }
 
@@ -35,12 +35,12 @@ figure {
   backface-visibility: hidden;
 }
 
-figure.MoneyCover__front{
-  background-image: url("./images/Money.jpg");
+figure.Saving_front{
+  background-image: url("./images/SavingCoverImage.jpg");
   background-repeat: round;
 }
 
-figure.MoneyCover__back{
-  background: #ffc1bd;
+figure.Saving_back{
+  background: #3d4752;
   transform: rotateY(180deg);
 }

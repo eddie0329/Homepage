@@ -48,7 +48,7 @@ export class MoneyCover extends Component {
 
           {/* popup dialog */}
           <Modal
-            title="Money vs Happiness 2019/04/19"
+            title="Money vs Happiness - 2019/04/19"
             centered
             visible={this.state.modal2Visible}
             footer={null}
@@ -80,15 +80,15 @@ export class MoneyCover extends Component {
             }}
           >
             <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Does rich family have more
-              happiness than those of poor? If so, is there any evidence to
-              prove it?" This case study was designated to answer previous
-              question.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“돈이 결혼 생활의 행복을 결정 짓는
+              중요한 요소일까? 만약 그렇다면 이걸 뒷받침할 만한 근거는 어디에
+              있을까?” 이 물음에 대답하기 위해 진행되었습니다.
             </p>
           </div>
 
           <div className="MoneyCover__Cover">
             <figure className="MoneyCover__front">
+              {/* Front title */}
               <h1
                 style={{
                   fontWeight: "bold",
@@ -101,6 +101,7 @@ export class MoneyCover extends Component {
               >
                 Money vs Happiness
               </h1>
+              {/* Front subtitle */}
               <h4
                 style={{
                   color: "#ff948f",

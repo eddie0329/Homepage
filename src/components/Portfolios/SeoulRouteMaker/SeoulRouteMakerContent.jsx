@@ -347,7 +347,16 @@ export class SeoulRouteMakerContent extends Component {
         />
         <p style={{ fontWeight: "bold", textAlign: "center" }}>-Edit Page-</p>
         <h2 style={{ fontWeight: "bold" }}>0. Conclusion</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After finishing this project, I had
+          various complements about this project. First of all, because of
+          constructing app with java, it is hard for people to actually use this
+          program. And the design is not satisfied due to the limits of
+          javax.swing. Furthermore, we could not implement the route in the
+          actual map, due to lack of time. So when I have to start projects like
+          this, I better use user-friendly framwork like Android so that design
+          it more eloquently and professionally.
+        </p>
         <h2 style={{ fontWeight: "bold" }}>Appendix A. References</h2>
         <div>
           <div>

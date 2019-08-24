@@ -49,7 +49,7 @@ export class SeoulRouteMaker extends Component {
 
           {/* popup dialog */}
           <Modal
-            title="Seoul Route Maker 2018/12/02"
+            title="Seoul Route Maker - 2018/12/02"
             centered
             visible={this.state.modal2Visible}
             footer={null}

@@ -6,6 +6,8 @@ import styled from "styled-components";
 import Money from "../components/Portfolios/Money vs Happiness among marriage/MoneyCover ";
 import BookShelf from "../images/Bookshelf.png";
 import SeoulRouteMaker from "../components/Portfolios/SeoulRouteMaker/SeoulRouteMaker";
+import Education from "../components/Portfolios/Education/EducationCover";
+import Saving from "../components/Portfolios/Saving/SavingCover";
 
 const { Footer } = Layout;
 
@@ -34,6 +36,7 @@ export class Portfolio extends Component {
           <Menu pathname={pathname} />
         </Col>
         <Contents>
+          {/* Row1 */}
           <Row
             type="flex"
             style={{
@@ -67,6 +70,44 @@ export class Portfolio extends Component {
               </Col>
             </Row>
           </Row>
+          {/* End of Row1 */}
+
+          {/* Row2 */}
+          <Row
+            type="flex"
+            style={{
+              width: "1400px",
+              height: "350px",
+              marginTop: "100px"
+            }}
+          >
+            <Col span={12}>
+              <Education />
+            </Col>
+            <Col span={12}>
+              <Saving />
+            </Col>
+            <Row
+              type="flex"
+              align="top"
+              style={{
+                width: "1400px",
+                height: "0px"
+              }}
+            >
+              <Col span={24}>
+                <img
+                  src={BookShelf}
+                  style={{
+                    width: "2880px",
+                    height: "500px",
+                    marginLeft: "-180px"
+                  }}
+                />
+              </Col>
+            </Row>
+          </Row>
+          {/* End of Row2 */}
         </Contents>
         <Col span={24}>
           <Footer style={{ textAlign: "center", background: "#0a262e" }}>
