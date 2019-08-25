@@ -5,16 +5,15 @@ import styled from "styled-components";
 export class MyTag extends Component {
   render() {
     return (
-      <Col span={8}>
+      <Col span={8} >
         <div
           style={{
-            marginTop: "300px",
-            marginBottom: "20px",
             marginLeft: "50px",
             textSize: "20px",
             color: "white",
             fontWeight: "bold",
-            fontSize: "20px"
+            fontSize: "20px",
+            marginTop: "60%",
           }}
         >
           Tag:

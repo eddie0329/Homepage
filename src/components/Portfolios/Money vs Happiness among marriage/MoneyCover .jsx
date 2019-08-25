@@ -29,7 +29,7 @@ export class MoneyCover extends Component {
             style={{
               position: "absolute",
               width: "25px",
-              height: "322px",
+              height: "330px",
               background: "#c48d8d"
             }}
           />

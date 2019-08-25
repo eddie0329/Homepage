@@ -5,12 +5,12 @@ import Logo from "../components/Logo";
 import styled from "styled-components";
 
 const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
-  margin-top: 1px;
+  margin-top: 10px;
   background-color: #f3f7f820;
   margin-left: auto;
   margin-right: auto;
-  width: 1400px;
-  height: 700px;
+  width: 135vh;
+  height: 65vh;
 `;
 
 const Contact__Label = styled.div`
@@ -33,7 +33,7 @@ export class Contact extends Component {
       <Row
         type="flex"
         align="middle"
-        style={{ background: "#0a262e", height: "1120px" }}
+        style={{ background: "#0a262e", height: "100vh" }}
       >
         <Col span={24} style={{ textAlign: "center" }}>
           <Logo />

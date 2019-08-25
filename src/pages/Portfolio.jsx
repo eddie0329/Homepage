@@ -4,7 +4,7 @@ import Menu from "../components/Menu";
 import Logo from "../components/Logo";
 import styled from "styled-components";
 import Money from "../components/Portfolios/Money vs Happiness among marriage/MoneyCover ";
-import BookShelf from "../images/Bookshelf.png";
+import BookShelf from "../images/BookShelf2.png";
 import SeoulRouteMaker from "../components/Portfolios/SeoulRouteMaker/SeoulRouteMaker";
 import Education from "../components/Portfolios/Education/EducationCover";
 import Saving from "../components/Portfolios/Saving/SavingCover";
@@ -12,13 +12,13 @@ import Saving from "../components/Portfolios/Saving/SavingCover";
 const { Footer } = Layout;
 
 const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
-  margin-top: 1px;
+  margin-top: 10px;
   background-color: #f3f7f820;
   margin-left: auto;
   margin-right: auto;
-  width: 1400px;
-  height: 700px;
-  overflow-x: hidden;
+  width: 135vh;
+  height: 65vh;
+  overflow-x: scroll;
   overflow-y: auto;
 `;
 
@@ -29,7 +29,7 @@ export class Portfolio extends Component {
       <Row
         type="flex"
         align="middle"
-        style={{ background: "#0a262e", height: "1120px" }}
+        style={{ background: "#0a262e", height: "100vh" }}
       >
         <Col span={24} style={{ textAlign: "center" }}>
           <Logo />
@@ -37,13 +37,7 @@ export class Portfolio extends Component {
         </Col>
         <Contents>
           {/* Row1 */}
-          <Row
-            type="flex"
-            style={{
-              width: "1400px",
-              height: "350px"
-            }}
-          >
+          <Row type="flex">
             <Col span={12}>
               <SeoulRouteMaker />
             </Col>
@@ -62,9 +56,9 @@ export class Portfolio extends Component {
                 <img
                   src={BookShelf}
                   style={{
-                    width: "2880px",
-                    height: "500px",
-                    marginLeft: "-180px"
+                    width: "1700px",
+                    height: "40px",
+                    marginTop: "48px"
                   }}
                 />
               </Col>
@@ -73,14 +67,7 @@ export class Portfolio extends Component {
           {/* End of Row1 */}
 
           {/* Row2 */}
-          <Row
-            type="flex"
-            style={{
-              width: "1400px",
-              height: "350px",
-              marginTop: "100px"
-            }}
-          >
+          <Row type="flex">
             <Col span={12}>
               <Education />
             </Col>
@@ -99,9 +86,9 @@ export class Portfolio extends Component {
                 <img
                   src={BookShelf}
                   style={{
-                    width: "2880px",
-                    height: "500px",
-                    marginLeft: "-180px"
+                    width: "1700px",
+                    height: "40px",
+                    marginTop: "48px"
                   }}
                 />
               </Col>

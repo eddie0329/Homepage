@@ -11,7 +11,7 @@ export class About extends Component {
             fontWeight: "bold",
             fontSize: "25px",
             marginLeft: "40px",
-            marginTop: "190px"
+            marginTop: "45%"
           }}
         >
           Name

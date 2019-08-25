@@ -8,11 +8,10 @@ import Photo4 from "../images/Photo4.jpg";
 import Photo5 from "../images/Photo5.jpg";
 
 const MyImage = styled.img`
-    width: 100%;
-    height: 500px;
-    border-radius: 50%;
+  width: 100%;
+  height: 500px;
+  border-radius: 50%;
 `;
-
 
 export class ProfileImage extends Component {
   render() {
@@ -20,21 +19,21 @@ export class ProfileImage extends Component {
       <Col
         span={8}
         style={{
-          margin: "auto",
+          margin: "auto"
         }}
       >
         <Carousel autoplay>
           <div>
-            <MyImage src={Photo4}/>
+            <MyImage src={Photo4} />
           </div>
           <div>
-            <MyImage src={Photo5}/>
+            <MyImage src={Photo5} />
           </div>
           <div>
-            <MyImage src={Photo3}/>
+            <MyImage src={Photo3} />
           </div>
           <div>
-            <MyImage src={Photo1}/>
+            <MyImage src={Photo1} />
           </div>
         </Carousel>
       </Col>

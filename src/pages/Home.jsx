@@ -8,14 +8,16 @@ import PhotoView from "../components/ProfileImage";
 import About from "../components/About";
 
 const { Footer } = Layout;
-
+// "flex" f3f7f820
 const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
-  margin-top: 1px;
+  margin-top: 10px;
   background-color: #f3f7f820;
   margin-left: auto;
   margin-right: auto;
-  width: 1400px;
-  height: 700px;
+  width: 135vh;
+  height: 65vh;
+  overflow-x: auto;
+  overflow-y: auto;
 `;
 
 export class Home extends Component {
@@ -25,7 +27,7 @@ export class Home extends Component {
       <Row
         type="flex"
         align="middle"
-        style={{ background: "#0a262e", height: "1120px" }}
+        style={{ background: "#0a262e", height: "100vh" }}
       >
         <Col span={24} style={{ textAlign: "center" }}>
           <Logo />
@@ -36,6 +38,7 @@ export class Home extends Component {
           <PhotoView />
           <About />
         </Contents>
+
         <Col span={24}>
           <Footer style={{ textAlign: "center", background: "#0a262e" }}>
             Eddie Sunny Design ©2019 Created by Eddie Sunny

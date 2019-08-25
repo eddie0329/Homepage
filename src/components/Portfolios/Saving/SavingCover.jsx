@@ -29,7 +29,7 @@ export class SavingCover extends Component {
           style={{
             position: "absolute",
             width: "25px",
-            height: "322px",
+            height: "330px",
             background: "#3d4752"
           }}
         />
