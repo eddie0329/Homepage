@@ -56,9 +56,9 @@ export class Portfolio extends Component {
                 <img
                   src={BookShelf}
                   style={{
-                    width: "1700px",
-                    height: "40px",
-                    marginTop: "48px"
+                    width: "98%",
+                    height: "30px",
+                    marginTop: "48.9px"
                   }}
                 />
               </Col>
@@ -86,9 +86,9 @@ export class Portfolio extends Component {
                 <img
                   src={BookShelf}
                   style={{
-                    width: "1700px",
-                    height: "40px",
-                    marginTop: "48px"
+                    width: "98%",
+                    height: "30px",
+                    marginTop: "48.9px"
                   }}
                 />
               </Col>
