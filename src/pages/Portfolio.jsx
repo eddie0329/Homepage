@@ -8,6 +8,7 @@ import BookShelf from "../images/BookShelf2.png";
 import SeoulRouteMaker from "../components/Portfolios/SeoulRouteMaker/SeoulRouteMaker";
 import Education from "../components/Portfolios/Education/EducationCover";
 import Saving from "../components/Portfolios/Saving/SavingCover";
+import Loading from "../components/Loading";
 
 const { Footer } = Layout;
 
@@ -23,8 +24,20 @@ const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
 `;
 
 export class Portfolio extends Component {
+  state = {
+    loading: true,
+  }
+  async componentDidMount() {
+    await setTimeout(() => {
+      this.setState({ loading: false });
+      console.log(this.state.loading);
+    }, 2000);
+  }
   render() {
     const pathname = this.props.location.pathname;
+    if (this.state.loading === true) {
+      return <Loading/>;
+    }
     return (
       <Row
         type="flex"
@@ -98,7 +111,7 @@ export class Portfolio extends Component {
         </Contents>
         <Col span={24}>
           <Footer style={{ textAlign: "center", background: "#0a262e" }}>
-            Eddie Sunny Design ©2019 Created by Eddie Sunny
+            ©Copyrigt ~2019 Eddie Sunny Powered by React, and Ant Design.
           </Footer>
         </Col>
       </Row>

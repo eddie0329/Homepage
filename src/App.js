@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Err from "./pages/Error";
 import "./App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/" component={Home} />
+        <Route component={Err} />
       </Switch>
     </HashRouter>
   );

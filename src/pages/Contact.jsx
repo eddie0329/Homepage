@@ -52,7 +52,7 @@ export class Contact extends Component {
         </Contents>
         <Col span={24}>
           <Footer style={{ textAlign: "center", background: "#0a262e" }}>
-            Eddie Sunny Design ©2019 Created by Eddie Sunny
+            ©Copyrigt ~2019 Eddie Sunny Powered by React, and Ant Design.
           </Footer>
         </Col>
       </Row>

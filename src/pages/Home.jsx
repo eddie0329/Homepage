@@ -6,9 +6,9 @@ import styled from "styled-components";
 import MyTag from "../components/MyTag";
 import PhotoView from "../components/ProfileImage";
 import About from "../components/About";
+import Loading from "../components/Loading";
 
 const { Footer } = Layout;
-// "flex" f3f7f820
 const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
   margin-top: 10px;
   background-color: #f3f7f820;
@@ -21,8 +21,22 @@ const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
 `;
 
 export class Home extends Component {
+  state = {
+    loading: true
+  };
+  async componentDidMount() {
+    await setTimeout(() => {
+      this.setState({ loading: false });
+      console.log(this.state.loading);
+    }, 1500);
+  }
+
   render() {
     const pathname = this.props.location.pathname;
+    if (this.state.loading === true) {
+      return <Loading/>;
+    }
+    console.log(this.state.loading);
     return (
       <Row
         type="flex"
@@ -41,7 +55,7 @@ export class Home extends Component {
 
         <Col span={24}>
           <Footer style={{ textAlign: "center", background: "#0a262e" }}>
-            Eddie Sunny Design ©2019 Created by Eddie Sunny
+            ©Copyrigt ~2019 Eddie Sunny Powered by React, and Ant Design.
           </Footer>
         </Col>
       </Row>
