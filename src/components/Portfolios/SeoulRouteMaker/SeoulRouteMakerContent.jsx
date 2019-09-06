@@ -141,7 +141,7 @@ export class SeoulRouteMakerContent extends Component {
     return (
       <div
         style={{
-          overflowX: "hidden",
+          overflowX: "auto",
           overflowY: "auto",
           height: "550px",
           paddingRight: "10px"

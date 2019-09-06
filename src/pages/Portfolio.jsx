@@ -19,102 +19,105 @@ const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
   margin-right: auto;
   width: 135vh;
   height: 65vh;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: auto;
 `;
 
 export class Portfolio extends Component {
   state = {
-    loading: true,
-  }
+    loading: false
+  };
   async componentDidMount() {
     await setTimeout(() => {
       this.setState({ loading: false });
       console.log(this.state.loading);
-    }, 2000);
+    }, 3000);
   }
   render() {
     const pathname = this.props.location.pathname;
     if (this.state.loading === true) {
-      return <Loading/>;
+      return <Loading />;
     }
     return (
-      <Row
-        type="flex"
-        align="middle"
-        style={{ background: "#0a262e", height: "100vh" }}
-      >
-        <Col span={24} style={{ textAlign: "center" }}>
-          <Logo />
-          <Menu pathname={pathname} />
-        </Col>
-        <Contents>
-          {/* Row1 */}
-          <Row type="flex">
-            <Col span={12}>
-              <SeoulRouteMaker />
-            </Col>
-            <Col span={12}>
-              <Money />
-            </Col>
-            <Row
-              type="flex"
-              align="top"
-              style={{
-                width: "1400px",
-                height: "0px"
-              }}
-            >
-              <Col span={24}>
-                <img
-                  src={BookShelf}
-                  style={{
-                    width: "98%",
-                    height: "30px",
-                    marginTop: "48.9px"
-                  }}
-                />
+      <>
+        <Row
+          type="flex"
+          align="middle"
+          style={{ background: "#0a262e", height: "100vh" }}
+        >
+          <Col span={24} style={{ textAlign: "center" }}>
+            <Logo />
+            <Menu pathname={pathname} />
+          </Col>
+          <Contents>
+            {/* Row1 */}
+            <Row type="flex">
+              <Col span={12}>
+                <SeoulRouteMaker />
               </Col>
+              <Col span={12}>
+                <Money />
+              </Col>
+              <Row
+                type="flex"
+                align="top"
+                style={{
+                  width: "1400px",
+                }}
+              >
+                <Col span={24}>
+                  <img
+                    src={BookShelf}
+                    style={{
+                      width: "95%",
+                      height: "30px",
+                      marginTop: "50px",
+                      marginLeft: "40px"
+                    }}
+                  />
+                </Col>
+              </Row>
             </Row>
-          </Row>
-          {/* End of Row1 */}
+            {/* End of Row1 */}
 
-          {/* Row2 */}
-          <Row type="flex">
-            <Col span={12}>
-              <Education />
-            </Col>
-            <Col span={12}>
-              <Saving />
-            </Col>
-            <Row
-              type="flex"
-              align="top"
-              style={{
-                width: "1400px",
-                height: "0px"
-              }}
-            >
-              <Col span={24}>
-                <img
-                  src={BookShelf}
-                  style={{
-                    width: "98%",
-                    height: "30px",
-                    marginTop: "48.9px"
-                  }}
-                />
+            {/* Row2 */}
+            <Row type="flex">
+              <Col span={12}>
+                <Education />
               </Col>
+              <Col span={12}>
+                <Saving />
+              </Col>
+              <Row
+                type="flex"
+                align="top"
+                style={{
+                  width: "1400px",
+                  height: "0px"
+                }}
+              >
+                <Col span={24}>
+                  <img
+                    src={BookShelf}
+                    style={{
+                      width: "95%",
+                      height: "30px",
+                      marginTop: "50px",
+                      marginLeft: "40px"
+                    }}
+                  />
+                </Col>
+              </Row>
             </Row>
-          </Row>
-          {/* End of Row2 */}
-        </Contents>
-        <Col span={24}>
-          <Footer style={{ textAlign: "center", background: "#0a262e" }}>
-            ©Copyrigt ~2019 Eddie Sunny Powered by React, and Ant Design.
-          </Footer>
-        </Col>
-      </Row>
+            {/* End of Row2 */}
+          </Contents>
+          <Col span={24}>
+            <Footer style={{ textAlign: "center", background: "#0a262e" }}>
+              ©Copyrigt ~2019 Eddie Sunny Powered by React, and Ant Design.
+            </Footer>
+          </Col>
+        </Row>
+      </>
     );
   }
 }

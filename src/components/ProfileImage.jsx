@@ -9,7 +9,7 @@ import Photo5 from "../images/Photo5.jpg";
 
 const MyImage = styled.img`
   width: 100%;
-  height: 500px;
+  height: 47vh;
   border-radius: 50%;
 `;
 
