@@ -1,11 +1,10 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Err from "./pages/Error";
 import "./App.css";
-
 
 function App() {
   return (

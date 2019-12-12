@@ -102,11 +102,21 @@ export class SeoulRouteMaker extends Component {
               >
                 Seoul Route Maker
               </h1>
+              <h3
+                style={{
+                  color: "#696b69",
+                  marginTop: "-10px",
+                  marginLeft: "130px",
+                  fontWeight: "bold"
+                }}
+              >
+                -놀러 go-
+              </h3>
               <h4
                 style={{
                   color: "#696b69",
-                  marginTop: "40px",
-                  marginLeft: "60px",
+                  marginTop: "10px",
+                  marginLeft: "80px",
                   fontWeight: "bold"
                 }}
               >
