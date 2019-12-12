@@ -30,7 +30,8 @@ export class SeoulRouteMaker extends Component {
             style={{
               position: "absolute",
               width: "25px",
-              height: "330px",
+              // height: "330px",
+              height: "100%",
               background: "#3f693f"
             }}
           />

@@ -71,8 +71,31 @@ export class Portfolio extends Component {
                     style={{
                       width: "100%",
                       height: "30px",
-                      marginTop: "0px",
-                      marginLeft: "0px"
+                      marginTop: "40px"
+                    }}
+                  />
+                </Col>
+              </Row>
+            </Row>
+            {/* End of Row1 */}
+            <Row type="flex">
+              <Col span={12}></Col>
+              <Col span={12}></Col>
+              <Row
+                type="flex"
+                align="top"
+                style={{
+                  width: "1400px",
+                  marginTop: "1%"
+                }}
+              >
+                <Col span={24}>
+                  <img
+                    src={BookShelf}
+                    style={{
+                      width: "100%",
+                      height: "30px",
+                      marginTop: "300px"
                     }}
                   />
                 </Col>
