@@ -3,6 +3,8 @@ import { Row, Col, Layout } from "antd";
 import Menu from "../components/Menu";
 import Logo from "../components/Logo";
 import styled from "styled-components";
+import AffixDiaglog from "../components/AffixDiaglog";
+import { Spring } from "react-spring/renderprops";
 
 const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
   margin-top: 10px;
@@ -41,19 +43,71 @@ export class Contact extends Component {
         </Col>
         <Contents>
           <Col span={24}>
-            <Contact__Label>Email</Contact__Label>
+            <Spring
+              config={{ tension: 2 }}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+            >
+              {props => <Contact__Label style={props}>Email</Contact__Label>}
+            </Spring>
+            <Spring
+              config={{ tension: 9 }}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+            >
+              {props => (
+                <Contact__Detail style={props}>
+                  fdsa0329@naver.com
+                </Contact__Detail>
+              )}
+            </Spring>
 
-            <Contact__Detail>fdsa0329@naver.com</Contact__Detail>
+            <Spring
+              config={{ tension: 5 }}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+            >
+              {props => (
+                <Contact__Label style={props}>KaKao Talk</Contact__Label>
+              )}
+            </Spring>
+            <Spring
+              config={{ tension: 3 }}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+            >
+              {props => (
+                <Contact__Detail style={props}>
+                  songzzang-_-92@hotmail.com
+                </Contact__Detail>
+              )}
+            </Spring>
 
-            <Contact__Label>KaKao Talk</Contact__Label>
-
-            <Contact__Detail>songzzang-_-92@hotmail.com</Contact__Detail>
+            <Spring
+              config={{ tension: 15 }}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+            >
+              {props => (
+                <Contact__Label style={props}>Direct Chat</Contact__Label>
+              )}
+            </Spring>
+            <Spring
+              config={{ tension: 7 }}
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+            >
+              {props => (
+                <Contact__Detail style={props}>below chat icon</Contact__Detail>
+              )}
+            </Spring>
           </Col>
         </Contents>
         <Col span={24}>
           <Footer style={{ textAlign: "center", background: "#0a262e" }}>
             ©Copyrigt ~2019 Eddie Sunny Powered by React, and Ant Design.
           </Footer>
+          <AffixDiaglog />
         </Col>
       </Row>
     );

@@ -6,9 +6,9 @@ import styled from "styled-components";
 import Money from "../components/Portfolios/Money vs Happiness among marriage/MoneyCover ";
 import BookShelf from "../images/BookShelf2.png";
 import SeoulRouteMaker from "../components/Portfolios/SeoulRouteMaker/SeoulRouteMaker";
-import Education from "../components/Portfolios/Education/EducationCover";
-import Saving from "../components/Portfolios/Saving/SavingCover";
+
 import Loading from "../components/Loading";
+import AffixDiaglog from "../components/AffixDiaglog";
 
 const { Footer } = Layout;
 
@@ -25,13 +25,13 @@ const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
 
 export class Portfolio extends Component {
   state = {
-    loading: false
+    loading: true
   };
   async componentDidMount() {
     await setTimeout(() => {
       this.setState({ loading: false });
       console.log(this.state.loading);
-    }, 3000);
+    }, 0);
   }
   render() {
     const pathname = this.props.location.pathname;
@@ -62,16 +62,16 @@ export class Portfolio extends Component {
                 type="flex"
                 align="top"
                 style={{
-                  width: "1400px",
+                  width: "1400px"
                 }}
               >
                 <Col span={24}>
                   <img
                     src={BookShelf}
                     style={{
-                      width: "95%",
+                      width: "115%",
                       height: "30px",
-                      marginTop: "50px",
+                      marginTop: "-70px",
                       marginLeft: "40px"
                     }}
                   />
@@ -79,42 +79,12 @@ export class Portfolio extends Component {
               </Row>
             </Row>
             {/* End of Row1 */}
-
-            {/* Row2 */}
-            <Row type="flex">
-              <Col span={12}>
-                <Education />
-              </Col>
-              <Col span={12}>
-                <Saving />
-              </Col>
-              <Row
-                type="flex"
-                align="top"
-                style={{
-                  width: "1400px",
-                  height: "0px"
-                }}
-              >
-                <Col span={24}>
-                  <img
-                    src={BookShelf}
-                    style={{
-                      width: "95%",
-                      height: "30px",
-                      marginTop: "50px",
-                      marginLeft: "40px"
-                    }}
-                  />
-                </Col>
-              </Row>
-            </Row>
-            {/* End of Row2 */}
           </Contents>
           <Col span={24}>
             <Footer style={{ textAlign: "center", background: "#0a262e" }}>
               ©Copyrigt ~2019 Eddie Sunny Powered by React, and Ant Design.
             </Footer>
+            <AffixDiaglog />
           </Col>
         </Row>
       </>

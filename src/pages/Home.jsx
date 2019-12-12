@@ -24,13 +24,13 @@ const Contents = styled(Row).attrs(() => ({ type: "flex" }))`
 
 export class Home extends Component {
   state = {
-    loading: true
+    loading: false
   };
   async componentDidMount() {
     await setTimeout(() => {
       this.setState({ loading: false });
       console.log(this.state.loading);
-    }, 1);
+    }, 1300);
   }
 
   render() {

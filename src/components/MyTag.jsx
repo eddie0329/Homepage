@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { Col, Tag } from "antd";
-import styled from "styled-components";
 
 export class MyTag extends Component {
   render() {
     return (
-      <Col span={8} >
+      <Col span={8}>
         <div
           style={{
             marginLeft: "50px",
@@ -14,9 +13,10 @@ export class MyTag extends Component {
             fontWeight: "bold",
             fontSize: "20px",
             marginTop: "60%",
+            marginBottom: "3px"
           }}
         >
-          Tag:
+          Tags:
         </div>
         <div style={{ textAlign: "center" }}>
           <Tag
@@ -27,35 +27,34 @@ export class MyTag extends Component {
               marginBottom: "8px"
             }}
           >
-            #Programmer
+            # Programmer
           </Tag>
-          {/* <StyledTag color="red">Student</StyledTag> */}
           <Tag
             color="volcano"
             style={{ backgroundColor: "#f3f7f820", textTransform: "uppercase" }}
           >
-            #Actor
+            # Actor
           </Tag>
-          {/* <Tag color="orange">orange</Tag> */}
+
           <Tag
             color="gold"
             style={{ backgroundColor: "#f3f7f820", textTransform: "uppercase" }}
           >
-            #Guitarist
+            # Guitarist
           </Tag>
           <Tag
             color="lime"
             style={{ backgroundColor: "#f3f7f820", textTransform: "uppercase" }}
           >
-            #Photographer
+            # Photographer
           </Tag>
           <Tag
             color="green"
             style={{ backgroundColor: "#f3f7f820", textTransform: "uppercase" }}
           >
-            #Student
+            # Student
           </Tag>
-          {/* <Tag color="cyan">cyan</Tag> */}
+
           <Tag
             color="blue"
             style={{
@@ -64,15 +63,15 @@ export class MyTag extends Component {
               marginBottom: "8px"
             }}
           >
-            #Major In Economics
+            # Major In Economics
           </Tag>
-          {/* <Tag color="geekblue">geekblue</Tag> */}
+
           <Tag
             color="purple"
             visible="false"
             style={{ backgroundColor: "#f3f7f820", textTransform: "uppercase" }}
           >
-            #Major In Computer Science
+            # Major In Computer Science
           </Tag>
         </div>
       </Col>

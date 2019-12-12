@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Err from "./pages/Error";
 import "./App.css";
 
+
 function App() {
   return (
     <HashRouter>
